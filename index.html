@@ -10,10 +10,12 @@
 <body>
 
     <div class="container">
-        <button type="submit" class="btn">Submit</button>
-        <div class="popup">
-            <img src="Asset/popup.png" alt="popup image">
+        <button type="submit" class="btn" onclick="showPopup">Submit</button>
+        <div class="popup" id="firstPopup">
+            <img src="Asset/Clock.jpg" alt="popup image">
             <h2>Thanks you</h2>
+            <p>Your info has updated successfully</p>
+            <button type="button" onclick="closePopup">Ok</button>
         </div>
     </div>
     
