@@ -21,7 +21,8 @@
     outline: white;
     font-size: 16px;
     border-radius: 25px; 
-    border:4px solid rgba(44, 188, 255, 0.493)
+    border:4px solid rgba(44, 188, 255, 0.493);
+    cursor:pointer;
 }
 
 .popup{
@@ -32,9 +33,11 @@
     top:0;
     left:50%;
     transform: translate(-50%, -50%) scale(0.1);
+    transition: transform 0.5s, top 0.5s;
     text-align: center;
-   padding: 20px;
-   visibility: hidden;
+    padding: 20px;
+    visibility: hidden;
+    
 }
 
 .popup img {
@@ -59,4 +62,11 @@
     border-radius: 4px;
     cursor: pointer;
     box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.showpopup {
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.5s, top 0.5s;
 }
